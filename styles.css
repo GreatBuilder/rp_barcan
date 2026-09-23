@@ -17,6 +17,7 @@
     background-color: #2e5886;;
     background-image: url(img/water-bg.jpg);
     background-size: cover;
+    backdrop-filter: blur(5px);
 }
 
 .logo {
@@ -69,8 +70,16 @@
 
 .horizontal-line {
     height: 5px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border: none;
+}
+
+.white-border{
+    border: 5px solid white;
+}
+
+.black-border{
+    border: 5px solid black;
 }
 
 /* ----------------- ID CSS ----------------- */
