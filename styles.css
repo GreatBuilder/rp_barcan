@@ -14,7 +14,14 @@
 }
 
 .body{
-    background-color: rgb(90, 92, 92);
+    background-color: #2e5886;;
+    background-image: url(img/water-bg.jpg);
+    background-size: cover;
+}
+
+.logo {
+    transform: scale(0.50);
+    transform-origin: top left;
 }
 
 .chartjs-sample{
@@ -22,7 +29,7 @@
 }
 
 .footer{                
-    background-color: #023E8A;
+    background-color: #2e5886;
 }
 
 .icon-white{            /* Arrow icon at bottom of page */
@@ -30,7 +37,7 @@
 }
 
 .nav-background-color{   /* navbar background color */
-    background-color: #023E8A;
+    background-color: #2e5886;
 }
 
 .nav-menu-item{               /* navbar link text properties */
@@ -56,8 +63,14 @@
     padding: 1px;
 }
 
-.showcase{
-    background-color: #8fa3ab; /*#0096c7*/
+.showcase {
+    background-color: #9eb4cd;
+}
+
+.horizontal-line {
+    height: 5px;
+    background-color: rgb(0, 0, 0);
+    border: none;
 }
 
 /* ----------------- ID CSS ----------------- */
