@@ -14,22 +14,10 @@
 }
 
 .body{
-    background-color: #2e5886;;
+    background-color: rgb(46, 88, 134);;
     background-image: url(img/water-bg.jpg);
     background-size: cover;
     backdrop-filter: blur(5px);
-}
-
-* { 
-    font-family: 'Gadugi' !important;
-}
-
-#growth-img {
-    margin-top: 50px;
-}
-
-p, li {
-    font-size: 20px;
 }
 
 .logo {
@@ -42,7 +30,7 @@ p, li {
 }
 
 .footer{                
-    background-color: #2e5886;
+    background-color: rgb(46, 88, 134, 0.6);
 }
 
 .icon-white{            /* Arrow icon at bottom of page */
@@ -50,7 +38,7 @@ p, li {
 }
 
 .nav-background-color{   /* navbar background color */
-    background-color: #2e5886;
+    background-color: rgb(46, 88, 134, 0.6);
 }
 
 .nav-menu-item{               /* navbar link text properties */
@@ -60,7 +48,7 @@ p, li {
 }
 
 .overview{
-    background-color: #dbe3e7;
+    background-color: rgba(219, 227, 231, 0.6);
 }
 
 .overview-left-padding{
@@ -72,12 +60,12 @@ p, li {
 }
 
 .procedure{
-    background-color: #dbe3e7;
+    background-color: rgba(219, 227, 231, 0.6);
     padding: 1px;
 }
 
 .showcase {
-    background-color: #9eb4cd;
+    background-color: rgba(158, 180, 205, 0.8);
 }
 
 .horizontal-line {
@@ -95,6 +83,10 @@ p, li {
 }
 
 /* ----------------- ID CSS ----------------- */
+
+#growth-img {
+    margin-top: 50px;
+}
 
 /* -----------------Underline Animation CSS -----------------*/
 #chart-wrapper{
@@ -130,4 +122,14 @@ p, li {
 .hover-underline-animation:hover:after {
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
+}
+
+/* ----------------- Element CSS ----------------- */
+
+* { 
+    font-family: 'Gadugi' !important;
+}
+
+p, li {
+    font-size: 20px;
 }
