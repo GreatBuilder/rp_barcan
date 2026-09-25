@@ -10,11 +10,11 @@
 }
 
 .authors{
-    background-color: #dbe3e7;
+    background-color: rgba(219, 227, 231, 0.6);
 }
 
 .body{
-    background-color: rgb(46, 88, 134);;
+    background-color: rgb(46, 88, 134);
     background-image: url(img/water-bg.jpg);
     background-size: cover;
     backdrop-filter: blur(5px);
