@@ -20,6 +20,20 @@
     backdrop-filter: blur(5px);
 }
 
+.grow {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.author-padding {
+    padding-bottom: 250px;
+    padding-top: 100px;
+}
+
+.grow:hover{
+    transform: scale(1.1);
+}
+
 .logo {
     transform: scale(0.50);
     transform-origin: top left;
