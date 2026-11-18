@@ -18,6 +18,7 @@
 
     <!-- chartjs scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.6.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-error-bars@4.4.5/build/index.umd.min.js"></script>
 
     <script src="js/linechart.js" defer></script>
 </head>
@@ -60,15 +61,12 @@
 
         <!-- summative data chart -->
         <div class="container-sm">
-            <section class="chartJS-sample">
-                <div class="container d-flex overflow-hidden bg-light" id="chart-wrapper">
-                    <canvas id="lineChart">
-                        
-                    </canvas>
+            <section class="chartjs-sample">
+                <div class="container d-flex overflow-hidden" id="chart-wrapper">
+                    <canvas id="lineChart"></canvas>
                 </div>
             </section>
         </div>
-        
 
         <!-- footer -->
          <footer class="p-5 footer text-light text-center position-relative">

@@ -15,8 +15,15 @@ async function getData()
         const waterFlowSpeed = parseFloat(columns[0]);
         xWaterFlowSpeeds.push(waterFlowSpeed);
 
+        const stdev = parseFloat(columns[2]);
+
         const meanPlanariaGrowth = parseFloat(columns[1]);
-        yMeanPlanariaGrowths.push(meanPlanariaGrowth);
+        yMeanPlanariaGrowths.push(
+        {
+            y: meanPlanariaGrowth,
+            yMin: meanPlanariaGrowth - stdev/2,
+            yMax: meanPlanariaGrowth + stdev/2
+        });
 
         console.log(waterFlowSpeed, meanPlanariaGrowth);
     });
@@ -30,7 +37,7 @@ async function createChart()
     
     const myChart = new Chart(lineChart, 
     {    
-        type: 'line',
+        type: 'lineWithErrorBars',
         data: 
         {                               // Define data
             labels: data.xWaterFlowSpeeds,        // x-axis labels
@@ -87,8 +94,7 @@ async function createChart()
                         },
                     },
                     ticks: 
-                    {                  
-                        maxTicksLimit: data.yMeanPlanariaGrowths.length / 10,    
+                    {  
                         font: 
                         {
                             size: 12
@@ -115,19 +121,6 @@ async function createChart()
                     {
                         top: 10,
                         bottom: 30
-                    }
-                },
-                legend: 
-                {
-                    display: true,
-                    align: 'start',
-                    position: 'bottom',
-                    labels:
-                    {
-                        font:
-                        {
-                            size: 14
-                        }
                     }
                 }
             }

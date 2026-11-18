@@ -40,7 +40,7 @@
 }
 
 .chartjs-sample{
-    background-color: #8fa3ab;
+    background-color: rgba(226, 235, 239, 0.72);
 }
 
 .footer{                
@@ -106,8 +106,7 @@
 #chart-wrapper{
     margin: auto;
     padding: 10px; 
-    min-height: 400px;
-    background-color: whitesmoke !important;
+    min-height: 800px;
     justify-content: center;
     align-items: center;  
 }
