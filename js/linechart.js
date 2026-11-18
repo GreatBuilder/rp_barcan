@@ -47,8 +47,8 @@ async function createChart()
                     label:    'Mean Planaria Growth (mm)',     // Dataset label for legend
                     data:     data.yMeanPlanariaGrowths,    // Reference to array of y-values
                     fill:     false,           // Fill area under the linechart (true = yes, false = no)
-                    backgroundColor:  'rgba(255, 0, 132, 0.2)',    // Color for data marker
-                    borderColor:      'rgba(255, 0, 132, 1)',      // Color for data marker border
+                    backgroundColor:  'rgba(0, 162, 255, 0.36)',    // Color for data marker
+                    borderColor:      'rgb(0, 183, 255)',      // Color for data marker border
                     borderWidth:      1   // Data marker border width
                 },
             ]
